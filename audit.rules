@@ -416,6 +416,8 @@
 -w /etc/docker -p wa -k docker
 -w /usr/bin/dockerd -p wa -k docker
 -w /etc/containers/ -p wa -k containers
+-w /run/containerd -p wa -k containers
+
 
 # CrowdStrike Falcon
 -a always,exit -F arch=b32 -F dir=/etc/crowdstrike/ -F perm=wa -F key=falcon_sensor
