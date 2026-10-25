@@ -414,6 +414,7 @@
 ## Container configuration
 -w /var/lib/docker -p wa -k docker
 -w /etc/docker -p wa -k docker
+-w /usr/bin/dockerd -p wa -k docker
 -w /etc/containers/ -p wa -k containers
 
 # CrowdStrike Falcon
